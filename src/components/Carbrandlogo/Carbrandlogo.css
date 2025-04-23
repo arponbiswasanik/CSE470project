@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.carbrand {
+  
+  
+  background-color: #fafafa;
+  padding: 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+
+}
+
+
+
+.brandlogo {
+  
+  position: relative;
+  width: 90%; /* Adjust width as per your requirement */
+  overflow: hidden;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #fff;
+  display:flex;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+
+
+}
+
+.brandlogo-list {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  /* width:auto; */
+  display: flex;
+  justify-content: space-between;
+
+  gap: 20px;
+ 
+  /* gap: var(--gap); */
+  animation: scroll 20s linear infinite;
+}
+
+.brandlogo:hover .brandlogo-list {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+  
+    transform: translateX(calc(-100% ));
+
+  }
+}
+
+.brandlogo .brandlogo-list li {
+  flex-shrink: 0;
+  width: 100px; /* Adjust logo size */
+  height: auto;
+  text-align: center;
+}
+
+
+
+
+

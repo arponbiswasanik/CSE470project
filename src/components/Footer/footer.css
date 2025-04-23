@@ -1,0 +1,109 @@
+/* Footer Section */
+.footer {
+  background-color: #fafafa;
+  color: black;
+  padding: 40px 10px 10px 10px;
+  font-family: sans-serif;
+
+}
+
+/* Footer Container */
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 70px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Brand Section */
+.footer-brand h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 14px;
+  color: black;
+}
+
+/* Footer Links */
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footer-links h3{
+  text-align: center;
+}
+.footer-links-list  {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  gap:10px;
+  justify-content: space-between;
+}
+
+.footer-links-list a {
+  text-decoration: none;
+  color: black;
+  font-size: 14px;
+}
+
+.footer-links-list a:hover {
+  color: #007bff;
+}
+
+/* Footer Contact */
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: black;
+}
+
+/* Social Media Icons */
+.footer-social .social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social .social-icons a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  color: #007bff;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+  font-size: 14px;
+  color: black;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-social .social-icons {
+    justify-content: center;
+  }
+}
+
+
+.footer-social h3{
+  text-align: center;
+}

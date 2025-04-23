@@ -1,0 +1,100 @@
+/* General Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+li img {
+  max-width: 100%;
+  width: 100%; /* Ensures images fit within their containers */
+  height: 100%; /* Ensures aspect ratio */
+  object-fit: cover; /* Crops images to fill the box */
+}
+
+.carrepair {
+  background-color: #fafafa;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.repairlogo {
+  position: relative;
+  width: 90%; /* Adjust width as needed */
+  overflow: hidden;
+  border: 2px solid black;
+  padding: 20px;
+  background-color: #fff;
+  display: flex;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.repairlogo-list {
+  list-style: none;
+  flex-shrink: 0;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  animation: scroll 20s linear infinite;
+}
+
+.repairlogo:hover .repairlogo-list {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100%));
+  }
+}
+
+.repairlogo .repairlogo-list li {
+  flex-shrink: 0;
+  width: 150px; /* Adjust image size */
+  height: 150px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px 1px #000;
+}
+
+.repairlogo .repairlogo-list li button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  display: none; /* Hidden by default */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.repairlogo .repairlogo-list li:hover button {
+  display: block; /* Show on hover */
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+.repairlogo .repairlogo-list li:hover {
+  transform: scale(1.1); /* Enlarge image slightly on hover */
+  transition: transform 0.3s ease;
+}

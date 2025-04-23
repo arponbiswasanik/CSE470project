@@ -1,0 +1,28 @@
+
+
+.nav-link {
+  color: #e1e1e1; /* Default color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+.nav-link:hover {
+  color: #ffff; /* Hover color */
+}
+
+.carosal-container {
+  position: relative;
+}
+
+.carosal-search {
+  position: absolute;
+  bottom: 110px;
+  width: auto;
+  width: 90%;
+  left: 5%;
+
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+

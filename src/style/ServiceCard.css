@@ -1,0 +1,75 @@
+.service-card {
+    background-color: #ffffff; /* White card background */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+    padding: 20px; /* Inner padding */
+    margin: 15px; /* Space between cards */
+    text-align: center; /* Center align content */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effects */
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  .service-card h3 {
+    font-size: 1.5rem; /* Title font size */
+    color: #333333; /* Dark gray text */
+    margin-bottom: 10px; /* Spacing below the title */
+  }
+  
+  .service-card p {
+    font-size: 1rem; /* Paragraph font size */
+    color: #555555; /* Medium gray text */
+    margin-bottom: 15px; /* Spacing between paragraphs */
+  }
+  
+  .service-card button {
+    background-color: #007bff; /* Blue button background */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Slightly rounded corners */
+    padding: 10px 15px; /* Padding for the button */
+    font-size: 1rem; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+  }
+  
+  .service-card button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  .service-card input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding inside input */
+    margin: 5px 0; /* Margin for spacing */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 1rem; /* Font size */
+  }
+  
+  .service-card input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #007bff; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle blue glow */
+  }
+  
+  .service-card .save-button {
+    background-color: #28a745; /* Green background for save */
+  }
+  
+  .service-card .save-button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
+  .service-card .delete-button {
+    background-color: #dc3545; /* Red background for delete */
+    margin-left: 10px; /* Add spacing between buttons */
+  }
+  
+  .service-card .delete-button:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
