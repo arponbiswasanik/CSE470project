@@ -1,0 +1,81 @@
+.admin-dashboard {
+    padding: 20px;
+}
+
+.admin-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.admin-stats {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.stat-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    flex: 1 1 200px; /* Responsive flex */
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.stat-card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.user-table {
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-view {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}

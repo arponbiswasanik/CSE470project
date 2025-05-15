@@ -1,0 +1,94 @@
+.comparison-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.search-bar-container {
+    position: relative; /* Add this to the parent container of the search bar */
+}
+
+/* Ensure the suggestions list is properly styled */
+.suggestions {
+    position: absolute;
+    top: 100%;  /* Place suggestions below the search bar */
+    left: 0;
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 5px 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.suggestions li {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.suggestions li:hover {
+    background-color: #f0f0f0; /* Change background on hover */
+}
+
+.suggestions img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.comparison-table table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.comparison-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.search-bar {
+    width: 90%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.car-image {
+    width: 200px;   /* Set the desired width */
+    height: auto;   /* Maintain aspect ratio */
+    object-fit: cover; /* Ensures the image covers the box without distortion */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    text-align: left;
+    margin: 5px 0;
+}

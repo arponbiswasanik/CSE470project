@@ -1,0 +1,39 @@
+.rent-cars-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.cars-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.car-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  max-width: 300px;
+  text-align: center;
+}
+
+.car-image {
+  width: 100%;
+  height: auto;
+}
+
+.car-details {
+  padding: 15px;
+}
+
+.car-details h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.car-details p {
+  margin: 5px 0;
+  color: #555;
+}
